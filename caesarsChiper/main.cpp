@@ -11,14 +11,14 @@ int main()
   cout << "Enter your phrase: \n";
   getline(cin, input);
 
-  length = (int)input.length();
+  length = input.length();
 
   for (count = 0; count < length; count++)
   {
     if(isalpha(input[count]))
     {
       input[count] = tolower(input[count]);
-      for (int i = 0; i < 13; i++)
+      for (int i = 0; i < 3; i++)
       {
         if (input[count] == 'z')
           input[count] = 'a';
